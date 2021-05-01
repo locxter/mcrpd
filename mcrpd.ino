@@ -2,7 +2,7 @@
 //#include <Keyboard.h>
 
 // Defining look-ups for grid size (number of rows and columns) and pins (first columns, then rows)
-const int GRID_SIZE[2] = {3, 3};
+const int GRID_SIZE[] = {3, 3};
 const int BUTTON_NUMBER = GRID_SIZE[0] * GRID_SIZE[1];
 const int PINS[] = {5, 6, 7, 2, 3, 4};
 
