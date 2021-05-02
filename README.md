@@ -14,7 +14,7 @@ Below is a full bill of material with German sources for all non printable parts
 | --- | --- | --- |
 | 1 | Instant glue | [Amazon](https://www.amazon.de/Pattex-Sekundenkleber-L%C3%B6sungsmittelfreier-Gel-Kleber-Transparent/dp/B00O23B8IE) |
 | 1 | Cables | [Amazon](https://www.amazon.de/Donau-Elektronik-GMBH-Original-Kupfer/dp/B01BI1G88C) |
-| 10 | Tactile push buttons | [Amazon](https://www.amazon.de/PsmGoods-Momentary-Aus-Taster-Schalter-Black/dp/B01MXHXON6) |
+| 9 | Tactile push buttons | [Amazon](https://www.amazon.de/PsmGoods-Momentary-Aus-Taster-Schalter-Black/dp/B01MXHXON6) |
 | 1 | Microcontroller | [Amazon](https://www.amazon.de/ARCELI-Atmega32U4-bootloadered-Entwicklung-Microcontroller/dp/B07J2Q3ZD5) |
 
 ## How to change the macros
