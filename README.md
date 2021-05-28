@@ -23,7 +23,8 @@ As all macros are hard programmed, you need to modify the firmware located in `m
 
 ## Dependencies
 
-I generally try to minimize dependencies, but I'm a one man crew and can therefore only support Ubuntu based Linux distributions as I'm running Linux Mint myself. Anyway, you need to have the following packages installed for everything to work properly:
+I generally try to minimize dependencies, but I'm a one man crew and can therefore only support Ubuntu as I'm running it myself. Anyway, you need to have the following packages installed for everything to work properly:
 
 - Arduino IDE as a way to compile the Arduino code. Install it with `sudo apt install arduino`.
-- Vim for editing the source code. Install it with `sudo apt install vim`.
+- OpenSCAD for rendering the CAD file. Install it with `sudo apt install openscad`.
+- Gedit for editing the source code. Install it with `sudo apt install gedit`.
