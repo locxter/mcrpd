@@ -6,9 +6,9 @@ This is a simple fully parametric and customizable macro keypad I have designed 
 
 ## How to build it
 
-mcrpd's electronics consist of an Arduino Micro compatible microcontroller and 9 tactile push buttons all housed in a 3D printed enclosure in the default configuration, but feel free customize the CAD model for housing even more buttons or a totally different microcontroller. After then wiring the buttons up in an pull down multiplexing matrix everything is just assembled using instant glue.
+mcrpd's electronics consist of an Arduino Micro compatible microcontroller and 9 tactile push buttons all housed in a 3D printed enclosure in the default configuration, but feel free customize the CAD model for housing even more buttons or a totally different microcontroller. After then wiring the buttons up in a pull-down-multiplexing-matrix everything is just assembled using instant glue.
 
-Below is a full bill of material with German sources for all non printable parts.
+Below is a full bill of materials with German sources for all non-printable parts.
 
 | Quantity: | Item: | Source: |
 | --- | --- | --- |
