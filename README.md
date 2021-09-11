@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a simple fully parametric and customizable macro keypad I have designed and built.
+This is a simple customizable macro keypad I have designed and built.
 
 ## How to build it
 
@@ -19,12 +19,12 @@ Below is a full bill of materials with German sources for all non-printable part
 
 ## How to change the macros
 
-As all macros are hard programmed, you need to modify the firmware located in `mcrpd.ino` and then reflash it using the Arduino IDE in order to change them. For realizing your specific macros follow the [keyboard library guide](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/) from the Arduino Foundation and paste your snippets into the different cases defined in the switch...case statement.
+As all macros are hard programmed, you need to modify the firmware located in `mcrpd.ino` and then reflash it using the Arduino IDE in order to change them. For realizing your specific macros follow the [keyboard library guide](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/) from the Arduino Foundation and paste your snippets into the different cases defined in the switch statement.
 
 ## Dependencies
 
 I generally try to minimize dependencies, but I'm a one man crew and can therefore only support Ubuntu as I'm running it myself. Anyway, you need to have the following packages installed for everything to work properly:
 
 - Arduino IDE as a way to compile the Arduino code. Install it with `sudo apt install arduino`.
-- OpenSCAD for rendering the CAD file. Install it with `sudo apt install openscad`.
+- FreeCAD for editing and exporting the CAD file. Install it with `sudo apt install freecad`.
 - Gedit for editing the source code. Install it with `sudo apt install gedit`.

@@ -1,4 +1,4 @@
-// Including the needed library
+// Including needed header
 #include <Keyboard.h>
 
 // Defining look-up for grid size (number of columns and rows)
@@ -22,11 +22,12 @@ const int ROW_PINS[] =
     2
 };
 
-// Defining variables for button readings
-int buttonState[100];
+// Defining variable for button readings
+int buttonState[9];
 // Defining variable for last button states
-int lastButtonState[100];
+int lastButtonState[9];
 
+// Main setup function
 void setup() {
     // Defining column pins as output and setting them to their default state
     for (int i = 0; i < GRID_SIZE[0]; i++) {
@@ -41,6 +42,7 @@ void setup() {
     Keyboard.begin();
 }
 
+// Main function
 void loop() {
     // Reading the buttons by switching a column at atime to non-default state and checking for connected rows
     for (int i = 0; i < GRID_SIZE[0]; i++) {
