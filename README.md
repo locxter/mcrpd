@@ -4,9 +4,19 @@
 
 This is a simple customizable macro keypad I have designed and built.
 
+## Dependencies
+
+I generally try to minimize dependencies, but I'm a one man crew and can therefore only support Ubuntu as I'm running it myself. Anyway, you need to have the following packages installed for everything to work properly:
+
+- Arduino IDE as a way to compile the Arduino code. Install it with `sudo apt install arduino`.
+- FreeCAD for editing and exporting the CAD file. Install it with `sudo apt install freecad`.
+- Gedit for editing the source code. Install it with `sudo apt install gedit`.
+
 ## How to build it
 
 mcrpd's electronics consist of an Arduino Micro compatible microcontroller and 9 tactile push buttons all housed in a 3D printed enclosure in the default configuration, but feel free customize the CAD model for housing even more buttons or a totally different microcontroller. After then wiring the buttons up in a pull-down-multiplexing-matrix everything is just assembled using instant glue.
+
+![Assembly image](cad/assembly.png)
 
 Below is a full bill of materials with German sources for all non-printable parts.
 
@@ -20,11 +30,3 @@ Below is a full bill of materials with German sources for all non-printable part
 ## How to change the macros
 
 As all macros are hard programmed, you need to modify the firmware located in `mcrpd.ino` and then reflash it using the Arduino IDE in order to change them. For realizing your specific macros follow the [keyboard library guide](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/) from the Arduino Foundation and paste your snippets into the different cases defined in the switch statement.
-
-## Dependencies
-
-I generally try to minimize dependencies, but I'm a one man crew and can therefore only support Ubuntu as I'm running it myself. Anyway, you need to have the following packages installed for everything to work properly:
-
-- Arduino IDE as a way to compile the Arduino code. Install it with `sudo apt install arduino`.
-- FreeCAD for editing and exporting the CAD file. Install it with `sudo apt install freecad`.
-- Gedit for editing the source code. Install it with `sudo apt install gedit`.
