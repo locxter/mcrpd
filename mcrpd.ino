@@ -17,9 +17,9 @@ const int COLUMN_PINS[] =
 
 const int ROW_PINS[] = 
 {
-    4, 
+    2, 
     3, 
-    2
+    4
 };
 
 // Defining variable for button readings
