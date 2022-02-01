@@ -11,7 +11,7 @@ I generally try to minimize dependencies, but I'm a one man crew and can therefo
 - FreeCAD for editing and exporting the CAD file. Install it with `sudo apt install freecad`.
 - A2Plus for assemblying to robot virtually in FreeCAD. Install it via the integrated addon manager.
 - Arduino IDE as a way to compile the Arduino code. Install it with `sudo apt install arduino`.
-- gedit for editing the source code. Install it with `sudo apt install gedit`.
+- VSCodium as universal text editor and IDE. Install it with `sudo snap install codium --classic`.
 
 ## How to build it
 
