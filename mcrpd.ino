@@ -1,20 +1,17 @@
-// Including needed header
 #include <Keyboard.h>
 
-// Defining look-up for grid size (number of columns and rows)
+// Defining look-ups for grid size (number of columns and rows) and pins
 const int GRID_SIZE[] =
 {
     3,
     3
 };
-// Defining look-ups for pins
 const int COLUMN_PINS[] =
 {
     5,
     6,
     7
 };
-
 const int ROW_PINS[] =
 {
     2,
@@ -22,9 +19,8 @@ const int ROW_PINS[] =
     4
 };
 
-// Defining variable for button readings
+// Defining variables for button readings and last button states
 int buttonState[9];
-// Defining variable for last button states
 int lastButtonState[9];
 
 // Main setup function
@@ -43,13 +39,12 @@ void setup()
     }
     // Initializing keyboard functionality
     Keyboard.begin();
-    digitalR
 }
 
 // Main function
 void loop()
 {
-    // Reading the buttons by switching a column at atime to non-default state and checking for connected rows
+    // Reading the buttons by switching a column at a time to non-default state and checking for connected rows
     for (int i = 0; i < GRID_SIZE[0]; i++)
     {
         digitalWrite(COLUMN_PINS[i], LOW);
@@ -100,6 +95,6 @@ void loop()
             }
         }
     }
-    // Delay as very basic way to debounce
+    // Delay as a very basic way of debouncing
     delay(100);
 }
