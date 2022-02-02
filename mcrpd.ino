@@ -1,23 +1,9 @@
 #include <Keyboard.h>
 
 // Defining look-ups for grid size (number of columns and rows) and pins
-const int GRID_SIZE[] =
-{
-    3,
-    3
-};
-const int COLUMN_PINS[] =
-{
-    5,
-    6,
-    7
-};
-const int ROW_PINS[] =
-{
-    2,
-    3,
-    4
-};
+const int GRID_SIZE[] = {3, 3};
+const int COLUMN_PINS[] = {5, 6, 7};
+const int ROW_PINS[] = {2, 3, 4};
 
 // Defining variables for button readings and last button states
 int buttonState[9];
@@ -64,33 +50,33 @@ void loop()
             {
                 switch (i)
                 {
-                    case 0:
-                        Keyboard.write('0');
-                        break;
-                    case 1:
-                        Keyboard.write('1');
-                        break;
-                    case 2:
-                        Keyboard.write('2');
-                        break;
-                    case 3:
-                        Keyboard.write('3');
-                        break;
-                    case 4:
-                        Keyboard.write('4');
-                        break;
-                    case 5:
-                        Keyboard.write('5');
-                        break;
-                    case 6:
-                        Keyboard.write('6');
-                        break;
-                    case 7:
-                        Keyboard.write('7');
-                        break;
-                    case 8:
-                        Keyboard.write('8');
-                        break;
+                case 0:
+                    Keyboard.write('0');
+                    break;
+                case 1:
+                    Keyboard.write('1');
+                    break;
+                case 2:
+                    Keyboard.write('2');
+                    break;
+                case 3:
+                    Keyboard.write('3');
+                    break;
+                case 4:
+                    Keyboard.write('4');
+                    break;
+                case 5:
+                    Keyboard.write('5');
+                    break;
+                case 6:
+                    Keyboard.write('6');
+                    break;
+                case 7:
+                    Keyboard.write('7');
+                    break;
+                case 8:
+                    Keyboard.write('8');
+                    break;
                 }
             }
         }
