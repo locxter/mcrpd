@@ -12,6 +12,7 @@ I generally try to minimize dependencies, but I'm a one man crew and can therefo
 - A2Plus for assemblying to robot virtually in FreeCAD. Install it via the integrated addon manager.
 - Arduino IDE as a way to compile the Arduino code. Install it with `sudo apt install arduino`.
 - VSCodium as universal text editor and IDE. To install it visit their [website](https://vscodium.com/#install).
+- VSCodium extensions Arduino and C++ to enhance it's capabilities. Install them with `codium --install-extension vsciot-vscode.vscode-arduino --install-extension ms-vscode.cpptools`.
 
 ## How to build it
 
