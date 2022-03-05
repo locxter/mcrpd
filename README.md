@@ -31,4 +31,4 @@ Below is a full bill of materials with German sources for all non-printable part
 
 ## How to change the macros
 
-As all macros are hard programmed, you need to modify the firmware located in `mcrpd.ino` and then reflash it using the Arduino IDE in order to change them. For realizing your specific macros follow the [keyboard library guide](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/) from the Arduino Foundation and paste your snippets into the different cases defined in the switch statement.
+As all macros are hard programmed, you need to modify the firmware file `mcrpd.ino` and then reflash it using the Arduino IDE in order to change them. For realizing your specific macros follow the [keyboard library guide](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/) from the Arduino Foundation and paste your snippets into the different cases defined in the switch statement.
