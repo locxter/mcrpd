@@ -1,32 +1,32 @@
 #include <Keyboard.h>
 
-// Defining look-ups for grid size (number of columns and rows) and pins
+// Look-ups for grid size (number of columns and rows) and pins
 const int GRID_SIZE[] = { 3, 3 };
 const int COLUMN_PINS[] = { 5, 6, 7 };
 const int ROW_PINS[] = { 2, 3, 4 };
 
-// Defining variables for button readings and last button states
+// Variables for button readings and last button states
 int buttonState[9];
 int lastButtonState[9];
 
-// Main setup function
+// Setup function
 void setup() {
-    // Defining column pins as output and setting them to their default state
+    // Define column pins as output and setting them to their default state
     for (int i = 0; i < GRID_SIZE[0]; i++) {
         pinMode(COLUMN_PINS[i], OUTPUT);
         digitalWrite(COLUMN_PINS[i], HIGH);
     }
-    // Defining row pins as inputs
+    // Define row pins as inputs
     for (int i = 0; i < GRID_SIZE[1]; i++) {
         pinMode(ROW_PINS[i], INPUT_PULLUP);
     }
-    // Initializing keyboard functionality
+    // Initialize keyboard functionality
     Keyboard.begin();
 }
 
 // Main function
 void loop() {
-    // Reading the buttons by switching a column at a time to non-default state and checking for connected rows
+    // Read the buttons by switching a column at a time to non-default state and checking for connected rows
     for (int i = 0; i < GRID_SIZE[0]; i++) {
         digitalWrite(COLUMN_PINS[i], LOW);
         for (int j = 0; j < GRID_SIZE[1]; j++) {
@@ -34,7 +34,7 @@ void loop() {
         }
         digitalWrite(COLUMN_PINS[i], HIGH);
     }
-    // Checking for state changes and detecting button presses
+    // Check for state changes and detect button presses
     for (int i = 0; i < 9; i++) {
         if (buttonState[i] != lastButtonState[i]) {
             lastButtonState[i] = buttonState[i];
