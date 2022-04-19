@@ -5,9 +5,9 @@ const int GRID_SIZE[] = { 3, 3 };
 const int COLUMN_PINS[] = { 5, 6, 7 };
 const int ROW_PINS[] = { 2, 3, 4 };
 
-// Variables for button readings and last button states
-int buttonState[9];
-int lastButtonState[9];
+// Variables for reading the buttons
+int buttonReadings[9];
+unsigned long lastButtonPresses[9];
 
 // Setup function
 void setup() {
@@ -30,47 +30,43 @@ void loop() {
     for (int i = 0; i < GRID_SIZE[0]; i++) {
         digitalWrite(COLUMN_PINS[i], LOW);
         for (int j = 0; j < GRID_SIZE[1]; j++) {
-            buttonState[i + (j * GRID_SIZE[0])] = digitalRead(ROW_PINS[j]);
+            buttonReadings[i + (j * GRID_SIZE[0])] = digitalRead(ROW_PINS[j]);
         }
         digitalWrite(COLUMN_PINS[i], HIGH);
     }
-    // Check for state changes and detect button presses
+    // Detecting button presses and reacting to them
     for (int i = 0; i < 9; i++) {
-        if (buttonState[i] != lastButtonState[i]) {
-            lastButtonState[i] = buttonState[i];
-            if (buttonState[i] == 0) {
-                switch (i) {
-                    case 0:
-                        Keyboard.write('0');
-                        break;
-                    case 1:
-                        Keyboard.write('1');
-                        break;
-                    case 2:
-                        Keyboard.write('2');
-                        break;
-                    case 3:
-                        Keyboard.write('3');
-                        break;
-                    case 4:
-                        Keyboard.write('4');
-                        break;
-                    case 5:
-                        Keyboard.write('5');
-                        break;
-                    case 6:
-                        Keyboard.write('6');
-                        break;
-                    case 7:
-                        Keyboard.write('7');
-                        break;
-                    case 8:
-                        Keyboard.write('8');
-                        break;
-                }
+        if (buttonReadings[i] == LOW && millis() - lastButtonPresses[i] > 200) {
+            switch (i) {
+                case 0:
+                    Keyboard.write('0');
+                    break;
+                case 1:
+                    Keyboard.write('1');
+                    break;
+                case 2:
+                    Keyboard.write('2');
+                    break;
+                case 3:
+                    Keyboard.write('3');
+                    break;
+                case 4:
+                    Keyboard.write('4');
+                    break;
+                case 5:
+                    Keyboard.write('5');
+                    break;
+                case 6:
+                    Keyboard.write('6');
+                    break;
+                case 7:
+                    Keyboard.write('7');
+                    break;
+                case 8:
+                    Keyboard.write('8');
+                    break;
             }
+            lastButtonPresses[i] = millis();
         }
     }
-    // Delay as a very basic way of debouncing
-    delay(100);
 }

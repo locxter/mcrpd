@@ -14,7 +14,7 @@ I generally try to minimize dependencies, but I'm a one man crew and can therefo
 
 ## How to build it
 
-mcrpd's electronics consist of an Arduino Micro compatible microcontroller and 9 tactile push buttons all housed in a 3D printed enclosure in the default configuration, but feel free customize the CAD model for housing even more buttons or a totally different microcontroller. After then wiring the buttons up in a pull-down-multiplexing-matrix everything is just assembled using instant glue.
+In the default configuration mcrpd's electronics consist of an Arduino Pro Micro and 9 tactile push buttons all housed in a 3D printed enclosure, but feel free customize the CAD model for housing even more buttons or a totally different microcontroller. After then wiring the buttons up in a pull-down-multiplexing-matrix everything is simply assembled using instant glue.
 
 ![Assembly image](cad/assembly.png)
 
@@ -25,7 +25,7 @@ Below is a full bill of materials with German sources for all non-printable part
 | 1 | Instant glue | [Amazon](https://www.amazon.de/Pattex-Sekundenkleber-L%C3%B6sungsmittelfreier-Gel-Kleber-Transparent/dp/B00O23B8IE) |
 | 1 | Cables | [Amazon](https://www.amazon.de/Donau-Elektronik-GMBH-Original-Kupfer/dp/B01BI1G88C) |
 | 9 | Tactile push buttons | [Amazon](https://www.amazon.de/PsmGoods-Momentary-Aus-Taster-Schalter-Black/dp/B01MXHXON6) |
-| 1 | Microcontroller | [Amazon](https://www.amazon.de/ARCELI-Atmega32U4-bootloadered-Entwicklung-Microcontroller/dp/B07J2Q3ZD5) |
+| 1 | Arduino Pro Micro | [Amazon](https://www.amazon.de/Micro-ATmega32U4-Arduino-Leonardo-%C3%A4hnlich/dp/B01D0OI90U) |
 
 ## How to change the macros
 
