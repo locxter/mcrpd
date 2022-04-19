@@ -18,7 +18,7 @@ In the default configuration mcrpd's electronics consist of an Arduino Pro Micro
 
 ![Assembly image](cad/assembly.png)
 
-Below is a full bill of materials with German sources for all non-printable parts.
+Below is a full bill of materials with German sources for all non-printable parts:
 
 | Quantity: | Item: | Source: |
 | --- | --- | --- |
