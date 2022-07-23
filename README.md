@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a simple customizable macro keypad I have designed and built.
+This is a customizable macro keypad I have designed and built.
 
 ## Dependencies
 
