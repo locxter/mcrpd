@@ -1,9 +1,9 @@
 #include <Keyboard.h>
 
 // Look-ups for grid size (number of columns and rows) and pins
-const int GRID_SIZE[] = { 3, 3 };
-const int COLUMN_PINS[] = { 5, 6, 7 };
-const int ROW_PINS[] = { 2, 3, 4 };
+const int GRID_SIZE[] = {3, 3};
+const int COLUMN_PINS[] = {5, 6, 7};
+const int ROW_PINS[] = {2, 3, 4};
 
 // Variables for reading the buttons
 int buttonReadings[9];
