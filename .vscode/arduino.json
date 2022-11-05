@@ -1,6 +1,0 @@
-{
-    "sketch": "mcrpd.ino",
-    "board": "arduino:avr:micro",
-    "programmer": "arduino:avrispmkii",
-    "port": "/dev/ttyACM0"
-}
